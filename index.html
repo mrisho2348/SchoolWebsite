@@ -9,8 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
+    <link rel="icon" type="image/jpeg" href="img/logo.jpeg">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,8 +42,9 @@
 
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-            <a href="index.html" class="navbar-brand">
-                <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>Madrasatul Mujtabah School</h1>
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <img src="img/logo.jpeg" alt="Madrasatul Mujtabah Logo" style="height: 50px;" class="me-2">
+                <h1 class="m-0 text-primary">Madrasatul Mujtabah School</h1>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -59,7 +59,7 @@
                             <a href="nursery.html" class="dropdown-item">Nursery (Kindergarten)</a>
                             <a href="primary.html" class="dropdown-item">Lower Primary School</a>
                             <a href="primary.html" class="dropdown-item">Upper Primary School</a>
-                            <a href="secondary.html" class="dropdown-item">Ordinary Level Secondary School</a>
+                            <a href="secondary.html" class="dropdown-item">O-Level Secondary School</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -687,8 +687,7 @@
                                             <div class="form-floating">
                                                 <select class="form-control border-0" id="educationLevel">
                                                     <option selected disabled>Select Education Level</option>
-                                                    <option value="pre-school">Pre-School</option>
-                                                    <option value="quranic-studies">Quranic Studies</option>
+                                                    <option value="pre-school">Pre-School</option>                                        
                                                     <option value="lower-primary">Lower Primary Level</option>
                                                     <option value="upper-primary">Upper Primary Level</option>
                                                     <option value="o-level">O-level Secondary Level</option>
@@ -947,57 +946,33 @@
         switch (educationLevel) {
             case 'pre-school':
                 classLevels = [
-                    'Science',
-                    'Kiswahili',
-                    'Mathematics',
-                    'English',
-                    'Islamic and Arabic',
-                    'Arts and Sports'
+                    'Pre-nursery(Baby)',
+                    'KG1',
+                    'KG2'                           
                 ];
-                break;
-            case 'quranic-studies':
-                classLevels = [
-                    'Beginner Quran',
-                    'Intermediate Quran',
-                    'Advanced Quran'
-                ];
-                break;
+                break;         
             case 'lower-primary':
                 classLevels = [
-                    'Kiswahili',
-                    'Mathematics',
-                    'Environments',
-                    'Islamic and Arabic',
-                    'English',
-                    'Creative Arts and Sports'
+                    'STD One',
+                    'STD Two',
+                    'STD Three'              
                 ];
                 break;
             case 'upper-primary':
                 classLevels = [
-                    'Kiswahili',
-                    'Mathematics',
-                    'Science and Technology',
-                    'English',
-                    'Arabic',
-                    'Islamic',
-                    'Social Science',
-                    'Creative Arts and Sports'
+                    'STD Four',
+                    'STD Five',
+                    'STD Six',
+                    'STD Seven'             
                 ];
                 break;
             case 'o-level':
                 classLevels = [
-                    'Kiswahili',
-                    'Geography',
-                    'Biology',
-                    'Chemistry',
-                    'Physics',
-                    'Mathematics',
-                    'Civics',
-                    'Historia na Maadili',
-                    'English',
-                    'Islamic Knowledge',
-                    'Arabic',
-                    'Information and Computer Studies'
+                    'Form One',
+                    'Form Two',
+                    'Form Three',
+                    'Form Four'                 
+                   
                 ];
                 break;
             default:
